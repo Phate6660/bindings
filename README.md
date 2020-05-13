@@ -60,7 +60,7 @@ fn main() {
 	handle_input_events();
 }
 ```
-Of course, this on it's own will fail since there is nothing for it to actuall do inside of `.bind(||)`.<br>
+Of course, this on it's own will fail since there is nothing for it to actually do inside of `.bind(||)`.<br>
 Now to make it actually run `mpc toggle`, you'd need to do:
 ```rust
 use inputbot::handle_input_events;
