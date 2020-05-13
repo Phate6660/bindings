@@ -20,6 +20,8 @@ and either move `./target/release/bindings` to somewhere in your `$PATH`<br>
 or `cargo install --path .` (inside the root dir of the git repo) and ensure<br>
 `$HOME/.cargo/bin` is in your `$PATH`.
 
+Note: Has the same deps as `inputbot`, so please check out [their repo](https://github.com/obv-mikhail/InputBot).
+
 ## Modification
 
 You'll need to modify the source to fit your needs. Currently, it is<br>
