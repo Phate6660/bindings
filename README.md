@@ -6,13 +6,15 @@ Table of Contents:<br>
 [Usage](#usage)<br>
 [Modification](#modification)<br>
 [Modification/Finding the keysym of the key you want to bind](#how-to-find-the-keysym-of-the-key-you-want-to-bind)<br>
-[Modification/How to bind the key and make it do something](#how-to-actually-bind-the-key-and-make-it-do-something)
+[Modification/How to bind the key and make it do something](#how-to-actually-bind-the-key-and-make-it-do-something)<br>
 [Thanks!](#thanks)
 
 ## Usage
 
 After modifying to your liking, `cargo build` and `sudo ./target/debug/bindings` to check that it works.<br>
+
 **Due to the way `libinput` works, the program must be run as root.**<br>
+
 After you think you have it the way you like it, `cargo build --release`<br>
 and either move `./target/release/bindings` to somewhere in your `$PATH`<br>
 or `cargo install --path .` (inside the root dir of the git repo) and ensure<br>
@@ -68,7 +70,8 @@ fn main() {
 	handle_input_events();
 }
 ```
-And there we go. After compiling and running, you should be able to press `Xf86AudioPlay` and have it run the command `mpc toggle`.
+And there we go. After compiling and running, you should be able to press `Xf86AudioPlay`<br>
+and have it run the command `mpc toggle`.
 
 ## Thanks
 
