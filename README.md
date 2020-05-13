@@ -56,7 +56,7 @@ use inputbot::handle_input_events;
 use inputbot::KeybdKey::*;
 
 fn main() {
-    OtherKey(0x1008ff14).bind(||);
+	OtherKey(0x1008ff14).bind(||);
 	handle_input_events();
 }
 ```
@@ -68,7 +68,7 @@ use inputbot::KeybdKey::*;
 use std::process::Command;
 
 fn main() {
-    OtherKey(0x1008ff14).bind(|| { Command::new("mpc").arg("toggle").output(); });
+	OtherKey(0x1008ff14).bind(|| { Command::new("mpc").arg("toggle").output(); });
 	handle_input_events();
 }
 ```
