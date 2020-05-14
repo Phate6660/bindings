@@ -72,7 +72,7 @@ fn main() {
 	handle_input_events();
 }
 ```
-And there we go. After compiling and running, you should be able to press `Xf86AudioPlay`<br>
+And there we go. After compiling and running, you should be able to press `XF86AudioPlay`<br>
 and have it run the command `mpc toggle`.
 
 ## Thanks
