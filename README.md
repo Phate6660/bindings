@@ -32,8 +32,8 @@ specified `mpc` commands.
 
 I use the program called `xev`. When you run it, a big blank window should open.<br>
 When it does, press the key you want to find the keysym of<br>
-(I'll use `XF86AudioPlay` for this example). After that, close the window and look through the output. You'll see<br>
-a lot of it, but the main section you want to look for will look like this:
+(I'll use `XF86AudioPlay` for this example). After that, close the window and look through the output.<br>
+You'll see a lot of it, but the main section you want to look for will look like this:
 ```
 KeyPress event, serial 35, synthetic NO, window 0x1400001,
     root 0x294, subw 0x416ee3, time 688908125, (184,95), root:(184,95),
