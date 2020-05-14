@@ -6,6 +6,10 @@ use inputbot::KeybdKey::*;
 use std::process::Command;
 
 fn main() {
+	// General keys
+	OtherKey(0xff61).bind(|| { Command::new("/home/valley/scripts/general").arg("scr").output(); }); // <Print> -> `general scr`
+
+	// Multimedia keys
 	OtherKey(0x1008ff17).bind(|| { Command::new("mpc").arg("next").output(); });   // XF86AudioNext -> `mpc next`
 	OtherKey(0x1008ff14).bind(|| { Command::new("mpc").arg("toggle").output(); }); // XF86AudioPlay -> `mpc toggle`
 	OtherKey(0x1008ff16).bind(|| { Command::new("mpc").arg("prev").output(); });   // XF86AudioPrev -> `mpc prev`
