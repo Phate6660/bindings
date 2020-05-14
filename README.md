@@ -31,8 +31,8 @@ specified `mpc` commands.
 ### How to find the keysym of the key you want to bind
 
 I use the program called `xev`. When you run it, a big blank window should open.<br>
-When it does, press the key you want to find the keysym of (I'll use `XF86AudioPlay`)<br>
-for this example. After that, close the window and look through the output. You'll see<br>
+When it does, press the key you want to find the keysym of<br>
+(I'll use `XF86AudioPlay` for this example). After that, close the window and look through the output. You'll see<br>
 a lot of it, but the main section you want to look for will look like this:
 ```
 KeyPress event, serial 35, synthetic NO, window 0x1400001,
